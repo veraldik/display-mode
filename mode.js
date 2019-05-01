@@ -23,4 +23,4 @@ if (count === null) {
 }
 count++
 window.localStorage.setItem('tracker', count)
-window.alert('You have visited this page ' + count + ' times!')
+document.getElementById('counter').innerHTML = 'You have visited this page ' + count + ' times!'
