@@ -5,23 +5,8 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <p>Click the button below to change between day and night themes</p>
   <button id="toggle">Click Me!</button>
-  <script>
-      var buttonElement = document.getElementById('toggle')
-
-      buttonElement.addEventListener('click', function() {
-        var theme = window.localStorage.getItem('theme')
-        if (theme === null || theme === 'day-theme') {
-          document.body.setAttribute('class', 'night-theme')
-          window.localStorage.remove('theme')
-          window.localStorage.setItem('theme', 'night-theme')
-        } else if (theme === 'night-theme') {
-          document.body.setAttribute('class', 'day-theme')
-          window.localStorage.remove('theme')
-          window.localStorage.setItem('theme', 'day-theme')
-        }
-      })
-
-    </script>
+  <script src="mode.js"></script>
   </body>
 </html>

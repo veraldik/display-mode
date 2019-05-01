@@ -1,7 +1,9 @@
 body.day-theme {
   background-color:white;
+  color:black;
 }
 
 body.night-theme {
   background-color:black;
+  color:white;
 }
